@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>JQuery with DOM</title>
+    <script>
+        $(function(){
+            $('p').parent().css('backgroundColor','orange');
+            $('#content').children('p').css('backgroundColor','grey');
+            // هذه راح تفعل على كل العناصر تحت content
+            $('#content').children().css('padding','10px');
+
+            // اضافة عنصر عن طري 
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <p>This is a paragraph</p>
+    </div>
+    <div id="content">
+        <h4>this is title</h4>
+        <p>This is paragraph from the content</p>
+    </div>
+</body>
+</html>
